@@ -1,32 +1,92 @@
-body{
+:root{
+    --header-web: #2196f3;
+    --nav-studio: #000000;
+
+    --nav: #212121;
+    --nav-number: #757575;
+    /*Це там де h1 і кнопка */
+    --main: #2F303A;
+    --main-title: #FFFFFF;
+    --li-h2: #212121;
+    --li-p: #757575;
+    --footer-background: var(--main);
+    /*2ст*/
+    --button: #F5F4FA
+}
+
+ body{
     font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+ }
+
+.header{
+    padding-top: 24px;
+    padding-bottom: 25px;
 }
-h1,h2,h3,p{
-    margin-bottom: 0;
-    margin-top: 0;
+
+.seaction-details{
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
-ul{
-    list-style: none;
-    padding: 0;
-    margin: 0;
+
+.activity{
+    padding-bottom: 94px;
 }
-a{
-    cursor: pointer;
-    text-decoration: none;
+
+.team{
+    padding-top: 94px;
+    padding-bottom: 94px;
+    font-size: 19px;
+    font-weight: 700;
+    background-color: var(--button);
 }
+
+.team-item{
+    background-color: var(--main-title);
+    width: 250px;
+}
+
+.footer{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var(--main)
+}
+
+.work-blok{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.post-taitel{
+    text-align: center;
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 136%;
+    text-transform: uppercase;
+    color: var(--main-title);
+    margin-bottom: 30px;
+}
+
+
+
 .logo{
     font-family: 'Raleway', sans-serif;
     font-size: 26px;
     font-weight: 700;
-    color: blue;
-
+    color:var(--header-web);
 }
 .black{
     color: black;
 }
 .navigation{
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 500
+}
+
+.seaction-post{
+    background-color: var(--main);
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 .site-nav-link{
     color: var(--nav);
@@ -34,8 +94,80 @@ a{
 .contact-link{
     color: var(--nav-number);
 }
-.contacts{
+.contact{
     font-size: 14px;
     font-weight: 500;
 }
+.post-button{
+    color: var(--main-title);
+    background: var(--header-web);
+    width: 216px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px 32px;
+    border: 0;
+    border-radius: 4px;
+   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
 
+.post-wrap{
+    display: flex;
+    justify-content: center;
+}
+
+.details-title{
+    margin-bottom: 10px;
+}
+
+
+
+.footer-logo{
+    color: var(--header-web);
+}
+
+.footer-city{
+    color: #FFF;
+}
+
+.footer-link{
+    color: rgba(255, 255, 255, 0.60);;
+}
+
+.seaction-title{
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+}
+.name{
+    color: #757575;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.team-img{
+    width: 270px;
+}
+
+.profession{
+    color: #757575;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+}
+.container{
+    width: 1200;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.head-studio{
+    color: var(--head-studio);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+.head-web{
+    color: var(--web);
+    font-family: 'Raleway', sans-serif;
+}
